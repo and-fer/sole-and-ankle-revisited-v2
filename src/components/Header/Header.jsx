@@ -1,10 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { COLORS, WEIGHTS } from '../../constants'
+import { COLORS, WEIGHTS, QUERIES } from '../../constants'
 import Logo from '../Logo'
 import SuperHeader from '../SuperHeader'
 import MobileMenu from '../MobileMenu'
+
+import SearchInput from '../SearchInput'
+import UnstyledButton from '../UnstyledButton'
+import Icon from '../Icon'
 
 const Header = () => {
   const [showMobileMenu, setShowMobileMenu] = React.useState(false)
@@ -30,6 +34,15 @@ const Header = () => {
           <NavLink href='/collections'>Collections</NavLink>
         </Nav>
         <Side />
+
+        <MobileIcons>
+          <UnstyledButton>
+            <Icon id='shopping-bag' strokeWidth={2} size={26} />
+          </UnstyledButton>
+          <UnstyledButton>
+            <Icon id='search' strokeWidth={2} size={26} />
+          </UnstyledButton>
+        </MobileIcons>
       </MainHeader>
 
       <MobileMenu
@@ -46,12 +59,20 @@ const MainHeader = styled.div`
   padding: 18px 32px;
   height: 72px;
   border-bottom: 1px solid ${COLORS.gray[300]};
+
+  @media (${QUERIES.phoneAndSmaller}) {
+    align-items: center;
+  }
 `
 
 const Nav = styled.nav`
   display: flex;
   gap: 48px;
   margin: 0px 48px;
+
+  @media (${QUERIES.phoneAndSmaller}) {
+    display: none;
+  }
 `
 
 const Side = styled.div`
@@ -67,6 +88,17 @@ const NavLink = styled.a`
 
   &:first-of-type {
     color: ${COLORS.secondary};
+  }
+`
+
+const MobileIcons = styled.div`
+  height: 100%;
+  display: none;
+  gap: 18px;
+
+  @media (${QUERIES.phoneAndSmaller}) {
+    display: flex;
+    align-items: center;
   }
 `
 
