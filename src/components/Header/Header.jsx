@@ -42,6 +42,9 @@ const Header = () => {
           <UnstyledButton>
             <Icon id='search' strokeWidth={2} size={26} />
           </UnstyledButton>
+          <UnstyledButton>
+            <Icon id='menu' strokeWidth={2} size={26} />
+          </UnstyledButton>
         </MobileIcons>
       </MainHeader>
 
