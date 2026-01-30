@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Dialog } from 'radix-ui'
 
 import { COLORS, WEIGHTS, QUERIES } from '../../constants'
 import Logo from '../Logo'
@@ -42,16 +43,24 @@ const Header = () => {
           <UnstyledButton>
             <Icon id='search' strokeWidth={2} size={26} />
           </UnstyledButton>
-          <UnstyledButton>
-            <Icon id='menu' strokeWidth={2} size={26} />
-          </UnstyledButton>
+
+          <Dialog.Root
+            modal={true}
+            open={showMobileMenu}
+            onOpenChange={setShowMobileMenu}
+          >
+            <Dialog.Trigger asChild>
+              <UnstyledButton onClick={() => setShowMobileMenu(true)}>
+                <Icon id='menu' strokeWidth={2} size={26} />
+              </UnstyledButton>
+            </Dialog.Trigger>
+            <MobileMenu
+              isOpen={showMobileMenu}
+              onDismiss={() => setShowMobileMenu(false)}
+            />
+          </Dialog.Root>
         </MobileIcons>
       </MainHeader>
-
-      <MobileMenu
-        isOpen={showMobileMenu}
-        onDismiss={() => setShowMobileMenu(true)}
-      />
     </header>
   )
 }
