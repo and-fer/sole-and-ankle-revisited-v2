@@ -79,8 +79,10 @@ const MainHeader = styled.div`
 
 const Nav = styled.nav`
   display: flex;
-  gap: 48px;
+  gap: clamp(1rem, 3.6vw + -0.25rem, 5rem);
   margin: 0px 48px;
+  overflow-x: auto;
+  white-space: nowrap;
 
   @media (${QUERIES.phoneAndSmaller}) {
     display: none;
