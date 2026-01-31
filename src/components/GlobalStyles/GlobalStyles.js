@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -64,11 +64,24 @@ table {
     float above the app.
   */
   isolation: isolate;
+
+--white: hsl(0deg 0% 100%);
+--gray-100: hsl(185deg 5% 95%);
+--gray-300: hsl(190deg 5% 80%);
+--gray-500: hsl(196deg 4% 60%);
+--gray-700: hsl(220deg 5% 40%);
+--gray-900: hsl(220deg 3% 20%);
+--red: hsl(0deg 65% 47%);
+--green: hsl(120deg 65% 47%);
+--primary: hsl(340deg 65% 47%);
+--secondary: hsl(240deg 60% 63%);
+--color-backdrop: hsla(220, 5%, 40%, 0.8);
+
 }
 
 html, body, #root {
   height: 100%;
 }
-`;
+`
 
-export default GlobalStyles;
+export default GlobalStyles

@@ -46,7 +46,7 @@ const CloseButton = styled(UnstyledButton)`
 const ModalOverlay = styled(Dialog.Overlay)`
   position: fixed;
   inset: 0;
-  background: rgba(96, 100, 108, 0.8);
+  background: var(--color-backdrop);
   backdrop-filter: blur(4px);
   z-index: 9998;
 `
@@ -62,7 +62,7 @@ const ModalContent = styled(Dialog.Content)`
   bottom: 0;
   width: 300px;
   height: 100%;
-  background: white;
+  background: var(--white);
   z-index: 9999;
 `
 
@@ -75,8 +75,12 @@ const Nav = styled.nav`
 
   a {
     text-decoration: none;
-    color: black;
+    color: var(--gray-900);
     font-size: 1.2rem;
+
+    &:first-child {
+      color: var(--secondary);
+    }
   }
 `
 
@@ -87,7 +91,7 @@ const Footer = styled.footer`
 
   a {
     text-decoration: none;
-    color: gray;
+    color: var(--gray-700);
     font-size: 0.9rem;
   }
 `

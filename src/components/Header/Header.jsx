@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Dialog } from 'radix-ui'
 
-import { COLORS, WEIGHTS, QUERIES } from '../../constants'
+import { WEIGHTS, QUERIES } from '../../constants'
 import Logo from '../Logo'
 import SuperHeader from '../SuperHeader'
 import MobileMenu from '../MobileMenu'
@@ -70,8 +70,7 @@ const MainHeader = styled.div`
   align-items: baseline;
   padding: 18px 32px;
   height: 72px;
-  border-bottom: 1px solid ${COLORS.gray[300]};
-
+  border-bottom: 1px solid var(--gray-300);
   @media (${QUERIES.phoneAndSmaller}) {
     align-items: center;
   }
@@ -97,11 +96,11 @@ const NavLink = styled.a`
   font-size: 1.125rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: ${COLORS.gray[900]};
+  color: var(--gray-900);
   font-weight: ${WEIGHTS.medium};
 
   &:first-of-type {
-    color: ${COLORS.secondary};
+    color: var(--secondary);
   }
 `
 
