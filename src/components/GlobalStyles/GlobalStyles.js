@@ -72,7 +72,7 @@ table {
 --gray-300: hsl(190deg 5% 80%);
 --gray-500: hsl(196deg 4% 60%);
 --gray-700: hsl(var(--gray-700-values));
---gray-900: hsl(220 3% 20% 1);
+--gray-900: hsl(220 3% 20% / 1);
 --primary: hsl(340deg 65% 47%);
 --secondary: hsl(240deg 60% 63%);
 --color-backdrop: hsl(var(--gray-700-values) / 0.8);
