@@ -33,7 +33,7 @@ const Link = styled.a`
   display: block;
   text-decoration: none;
   font-weight: var(--weight-medium);
-  color: var(gray--900);
+  color: var(--gray-900);
   line-height: 2;
 `
 
