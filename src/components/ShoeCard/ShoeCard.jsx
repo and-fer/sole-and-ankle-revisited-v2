@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { WEIGHTS } from '../../constants'
 import { formatPrice, pluralize, isNewShoe } from '../../utils'
 import Spacer from '../Spacer'
 
@@ -86,7 +85,7 @@ const Row = styled.div`
 `
 
 const Name = styled.h3`
-  font-weight: ${WEIGHTS.medium};
+  font-weight: var(--weight-medium);
   color: var(--gray-900);
 `
 
@@ -100,7 +99,7 @@ const ColorInfo = styled.p`
 `
 
 const SalePrice = styled.span`
-  font-weight: ${WEIGHTS.medium};
+  font-weight: var(--weight-medium);
   color: var(--primary);
 `
 
@@ -113,7 +112,7 @@ const Flag = styled.div`
   line-height: 32px;
   padding: 0 10px;
   font-size: ${14 / 18}rem;
-  font-weight: ${WEIGHTS.bold};
+  font-weight: var(--weight-bold);
   color: var(--white);
   border-radius: 2px;
 `

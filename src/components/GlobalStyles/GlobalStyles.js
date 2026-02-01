@@ -77,6 +77,11 @@ table {
 --secondary: hsl(240deg 60% 63%);
 --color-backdrop: hsla(220, 5%, 40%, 0.8);
 
+
+
+--weight-normal: 500;
+--weight-medium: 600;
+--weight-bold: 800;
 }
 
 html, body, #root {

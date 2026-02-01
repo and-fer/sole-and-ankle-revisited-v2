@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Dialog } from 'radix-ui'
 
-import { WEIGHTS, QUERIES } from '../../constants'
+import { QUERIES } from '../../constants'
 import Logo from '../Logo'
 import SuperHeader from '../SuperHeader'
 import MobileMenu from '../MobileMenu'
@@ -97,7 +97,7 @@ const NavLink = styled.a`
   text-transform: uppercase;
   text-decoration: none;
   color: var(--gray-900);
-  font-weight: ${WEIGHTS.medium};
+  font-weight: var(--weight-medium);
 
   &:first-of-type {
     color: var(--secondary);
