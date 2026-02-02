@@ -81,7 +81,8 @@ const MainHeader = styled.div`
   }
 
   @media (${QUERIES.phoneAndSmaller}) {
-    padding: 18px 16px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 `
 
@@ -120,11 +121,11 @@ const MobileIcons = styled.div`
   @media (${QUERIES.tabletAndSmaller}) {
     display: flex;
     align-items: center;
-    gap: calc(36 / 16 * 1rem);
+    gap: 36px;
   }
 
   @media (${QUERIES.phoneAndSmaller}) {
-    gap: calc(20 / 16 * 1rem);
+    gap: 20px;
   }
 `
 
