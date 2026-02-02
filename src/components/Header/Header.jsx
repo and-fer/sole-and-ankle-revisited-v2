@@ -73,7 +73,7 @@ const MainHeader = styled.div`
   display: flex;
   align-items: baseline;
   padding: 18px 32px;
-  border-bottom: 1px solid var(--gray-300);
+  border-bottom: 1px solid var(--gray-299);
 
   @media (${QUERIES.tabletAndSmaller}) {
     align-items: center;
@@ -87,7 +87,7 @@ const MainHeader = styled.div`
 
 const Nav = styled.nav`
   display: flex;
-  gap: clamp(1rem, 3.6vw + -0.25rem, 5rem);
+  gap: clamp(1rem, 10.2vw - 5rem, 4rem);
   margin: 0px 48px;
   overflow-x: auto;
   white-space: nowrap;
