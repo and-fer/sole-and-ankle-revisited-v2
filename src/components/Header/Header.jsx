@@ -9,6 +9,7 @@ import MobileMenu from '../MobileMenu'
 
 import SearchInput from '../SearchInput'
 import UnstyledButton from '../UnstyledButton'
+import VisuallyHidden from '../VisuallyHidden'
 import Icon from '../Icon'
 
 const Header = () => {
@@ -39,9 +40,11 @@ const Header = () => {
         <MobileIcons>
           <UnstyledButton>
             <Icon id='shopping-bag' strokeWidth={2} size={26} />
+            <VisuallyHidden>Open shopping cart</VisuallyHidden>
           </UnstyledButton>
           <UnstyledButton>
             <Icon id='search' strokeWidth={2} size={26} />
+            <VisuallyHidden>Search</VisuallyHidden>
           </UnstyledButton>
 
           <Dialog.Root
@@ -52,6 +55,7 @@ const Header = () => {
             <Dialog.Trigger asChild>
               <UnstyledButton onClick={() => setShowMobileMenu(true)}>
                 <Icon id='menu' strokeWidth={2} size={26} />
+                <VisuallyHidden>Open menu</VisuallyHidden>
               </UnstyledButton>
             </Dialog.Trigger>
             <MobileMenu
