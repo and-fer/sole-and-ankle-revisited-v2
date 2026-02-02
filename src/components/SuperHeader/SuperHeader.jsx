@@ -37,7 +37,7 @@ const Wrapper = styled.div`
   padding-left: 32px;
   padding-right: 32px;
 
-  @media (${QUERIES.phoneAndSmaller}) {
+  @media (${QUERIES.tabletAndSmaller}) {
     display: none;
   }
 `
@@ -45,9 +45,9 @@ const Wrapper = styled.div`
 const DecorativeMobileLine = styled.div`
   display: none;
 
-  @media (${QUERIES.phoneAndSmaller}) {
+  @media (${QUERIES.tabletAndSmaller}) {
     display: block;
-    height: 12px;
+    height: 4px;
     background-color: var(--gray-900);
   }
 `
