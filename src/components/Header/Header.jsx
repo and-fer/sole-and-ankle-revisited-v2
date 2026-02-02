@@ -73,7 +73,6 @@ const MainHeader = styled.div`
   display: flex;
   align-items: baseline;
   padding: 18px 32px;
-  height: 72px;
   border-bottom: 1px solid var(--gray-300);
 
   @media (${QUERIES.tabletAndSmaller}) {
