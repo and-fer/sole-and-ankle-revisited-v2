@@ -37,7 +37,7 @@ const Wrapper = styled.label`
 `
 
 const VisibleLabel = styled.span`
-  color: var(gray-700);
+  color: var(--gray-700);
   margin-right: 16px;
 `
 
@@ -59,7 +59,7 @@ const NativeSelect = styled.select`
 
 const DisplayedBit = styled.span`
   display: block;
-  background: var(gray-100);
+  background: var(--gray-100);
   font-size: 1rem;
   font-weight: var(--weight-medium);
   color: var(--gray-900);
