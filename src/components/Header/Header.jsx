@@ -71,8 +71,13 @@ const MainHeader = styled.div`
   padding: 18px 32px;
   height: 72px;
   border-bottom: 1px solid var(--gray-300);
+
   @media (${QUERIES.tabletAndSmaller}) {
     align-items: center;
+  }
+
+  @media (${QUERIES.phoneAndSmaller}) {
+    padding: 18px 16px;
   }
 `
 
