@@ -75,6 +75,7 @@ const Nav = styled.nav`
 
   a {
     text-decoration: none;
+    text-transform: uppercase;
     color: var(--gray-900);
     font-size: 1.2rem;
 
