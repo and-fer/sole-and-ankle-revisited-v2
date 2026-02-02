@@ -71,7 +71,7 @@ const MainHeader = styled.div`
   padding: 18px 32px;
   height: 72px;
   border-bottom: 1px solid var(--gray-300);
-  @media (${QUERIES.phoneAndSmaller}) {
+  @media (${QUERIES.tabletAndSmaller}) {
     align-items: center;
   }
 `
@@ -83,7 +83,7 @@ const Nav = styled.nav`
   overflow-x: auto;
   white-space: nowrap;
 
-  @media (${QUERIES.phoneAndSmaller}) {
+  @media (${QUERIES.tabletAndSmaller}) {
     display: none;
   }
 `
@@ -107,11 +107,15 @@ const NavLink = styled.a`
 const MobileIcons = styled.div`
   height: 100%;
   display: none;
-  gap: 18px;
 
-  @media (${QUERIES.phoneAndSmaller}) {
+  @media (${QUERIES.tabletAndSmaller}) {
     display: flex;
     align-items: center;
+    gap: calc(36 / 16 * 1rem);
+  }
+
+  @media (${QUERIES.phoneAndSmaller}) {
+    gap: calc(20 / 16 * 1rem);
   }
 `
 
